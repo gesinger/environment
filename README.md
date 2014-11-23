@@ -13,7 +13,7 @@ your repos (as it will sync the parent directory to /repos on the VM) and bring
 up the Vagrant box.
 
 ```bash
-$ cd /your/rep/dir
+$ cd /your/repo/dir
 $ git clone https://github.com/gesinger/environment.git
 $ vagrant up
 ```
