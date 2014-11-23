@@ -1,0 +1,23 @@
+" Enable pathogen for easy package management
+execute pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
+set number
+
+colorscheme jellybeans
+
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Highlight lines over 80 characters
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
+  autocmd BufEnter * match OverLength /\%80v.*/
+augroup END
+
+set cursorline
