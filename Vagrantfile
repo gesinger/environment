@@ -17,6 +17,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision 'file',
     source: 'files/vimrc',
     destination: '/home/vagrant/.vimrc'
+  config.vm.provision 'file',
+    source: 'files/bash_profile',
+    destination: '/home/vagrant/.bash_profile'
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
