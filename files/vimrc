@@ -6,6 +6,7 @@ filetype plugin indent on
 
 set number
 
+set background=dark
 colorscheme jellybeans
 
 set autoindent
