@@ -15,5 +15,16 @@ up the Vagrant box.
 ```bash
 $ cd /your/repo/dir
 $ git clone https://github.com/gesinger/environment.git
+$ cd environment
 $ vagrant up
 ```
+
+To replicate my environment on a physical machine, clone this repo into the
+directory where you keep your repos, clone this repo, cd into it, and run the
+physical bootrap.
+
+```bash
+$ cd /your/repo/dir
+$ git clone https://github.com/gesinger/environment.git
+$ cd environment
+$ sh bootstrap_physical.sh
