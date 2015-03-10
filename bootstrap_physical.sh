@@ -10,6 +10,7 @@ sudo apt-get install -y xterm
 # sudo apt-get install -y x11-server-utils
 # TODO: determine if necessary
 # sudo apt-get install ncurses...
+sudo apt-get install -y firefox
 
 if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/truetype/firamono
