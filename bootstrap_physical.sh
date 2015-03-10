@@ -11,6 +11,7 @@ sudo apt-get install -y xterm
 # TODO: determine if necessary
 # sudo apt-get install ncurses...
 sudo apt-get install -y firefox
+sudo apt-get install -y wicd-curses
 
 if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/truetype/firamono
