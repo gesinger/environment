@@ -19,3 +19,14 @@ if [ ! -d ~/.vim/bundle/jellybeans.vim ]; then
   cd ~/.vim/bundle && \
   git clone git://github.com/nanotech/jellybeans.vim.git
 fi
+
+if [ ! -d ~/.vim/bundle/goyo.vim ]; then
+  cd ~/.vim/bundle && \
+  git clone git://github.com/junegunn/goyo.vim.git
+fi
+
+if [ ! -d ~/.vim/bundle/limelight.vim ]; then
+  cd ~/.vim/bundle && \
+  git clone git://github.com/junegunn/limelight.vim.git
+fi
+
