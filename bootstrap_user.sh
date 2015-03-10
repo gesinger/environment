@@ -30,3 +30,6 @@ if [ ! -d ~/.vim/bundle/limelight.vim ]; then
   git clone git://github.com/junegunn/limelight.vim.git
 fi
 
+# Bash
+
+cat files/bashrc_append >> ~/.bashrc
