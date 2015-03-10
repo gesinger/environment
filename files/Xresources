@@ -1,0 +1,8 @@
+XTerm*termName: xterm-256color
+
+XTerm*renderFont: true
+XTerm*faceName: firamono
+XTerm*faceSize: 16
+
+XTerm*background: black
+XTerm*foreground: white
