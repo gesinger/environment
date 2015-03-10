@@ -15,9 +15,9 @@ if [ ! -d ~/.vim/bundle/vim-sensible ]; then
   git clone git://github.com/tpope/vim-sensible.git
 fi
 
-if [ ! -d ~/.vim/bundle/jellybeans.vim ]; then
+if [ ! -d ~/.vim/bundle/vim-distinguished ]; then
   cd ~/.vim/bundle && \
-  git clone git://github.com/nanotech/jellybeans.vim.git
+  git clone git://github.com/Lokaltog/vim-distinguished.git
 fi
 
 if [ ! -d ~/.vim/bundle/goyo.vim ]; then
