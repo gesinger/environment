@@ -12,6 +12,7 @@ sudo apt-get install -y xterm
 # sudo apt-get install ncurses...
 sudo apt-get install -y firefox
 sudo apt-get install -y wicd-curses
+sudo apt-get install -y powertop
 
 if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/truetype/firamono
