@@ -16,9 +16,15 @@ set shiftwidth=2
 set expandtab
 
 " Highlight lines over 80 characters
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
-  autocmd BufEnter * match OverLength /\%80v.*/
-augroup END
+highlight OverLength ctermbg=darkgrey guibg=#111111
+fun! UpdateMatch()
+  " Exclude these file types
+  if &ft !~ '^\%(text\)$'
+    match OverLength /\%80v.*/
+  else
+    match NONE
+  endif
+endfun
+autocmd BufEnter,WinEnter * call UpdateMatch()
 
 set cursorline
