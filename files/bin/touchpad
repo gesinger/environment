@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ $1 == 'off' ]; then
+  synclient TouchpadOff=1
+elif [ $1 == 'on' ]; then
+  synclient TouchpadOff=0
+fi

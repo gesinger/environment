@@ -10,3 +10,8 @@ export PS1="\n\n${PINK}\u ${D}at ${ORANGE}\H ${D}in ${GREEN}\w ${D}\n\$ "
 
 alias gits='git status'
 alias gitd='git diff --color'
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$PATH:$HOME/bin"
+fi
