@@ -14,6 +14,7 @@ sudo apt-get install -y firefox
 sudo apt-get install -y wicd-curses
 sudo apt-get install -y powertop
 sudo apt-get install -y htop
+sudo apt-get install -y pm-utils
 
 if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/truetype/firamono
