@@ -2,6 +2,7 @@
 
 git config --global user.email "gesinger@gmail.com"
 git config --global user.name "Garrett Singer"
+git config --global core.editor "vim"
 
 # VIM
 
