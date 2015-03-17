@@ -29,4 +29,4 @@ cp files/i3_config ~/.i3/config
 cp files/Xresources ~/.Xresources
 cp -r files/bin ~/
 
-chmod u+x bin/touchpad
+chmod u+x bin/*

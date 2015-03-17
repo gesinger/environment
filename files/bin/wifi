@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ $1 == 'off' ]; then
+  sudo ifdown wlan0
+elif [ $1 == 'on' ]; then
+  sudo ifup wlan0
+elif [ $1 == 'restart' ]; then
+  sudo ifdown wlan0
+  sudo ifup wlan0
+fi
