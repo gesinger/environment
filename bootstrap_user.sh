@@ -7,6 +7,7 @@ git config --global core.editor "vim"
 # VIM
 
 if [ ! -e ~/.vim/autoload/pathogen.vim ]; then
+  sudo apt-get install -y curl
   mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 fi
