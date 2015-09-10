@@ -6,8 +6,7 @@ sh bootstrap_user.sh
 sudo apt-get install -y xinit
 sudo apt-get install -y i3
 sudo apt-get install -y xterm
-# TODO: determine if necessary
-# sudo apt-get install -y x11-server-utils
+sudo apt-get install -y x11-xserver-utils
 # TODO: determine if necessary
 # sudo apt-get install ncurses...
 sudo apt-get install -y firefox
