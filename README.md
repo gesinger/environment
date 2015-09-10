@@ -20,8 +20,7 @@ $ vagrant up
 ```
 
 To replicate my environment on a physical machine, clone this repo into the
-directory where you keep your repos, clone this repo, cd into it, and run the
-physical bootrap.
+directory where you keep your repos, cd into it, and run the physical bootrap.
 
 ```bash
 $ cd /your/repo/dir
