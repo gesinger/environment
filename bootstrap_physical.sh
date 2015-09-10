@@ -26,7 +26,7 @@ if [ ! -e /usr/share/fonts/truetype/firamono ]; then
 fi
 
 cp files/vimrc ~/.vimrc
-cp files/i3_config ~/.i3/config
+mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config
 cp files/Xresources ~/.Xresources
 cp -r files/bin ~/
 
