@@ -21,7 +21,8 @@ if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   cd /usr/share/fonts/truetype/firamono && \
   sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Bold.ttf && \
   sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Medium.ttf && \
-  sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Regular.ttf
+  sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Regular.ttf && \
+  cd -
 fi
 
 cp files/vimrc ~/.vimrc
