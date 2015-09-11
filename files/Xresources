@@ -2,7 +2,7 @@ XTerm*termName: xterm-256color
 
 XTerm*renderFont: true
 XTerm*faceName: firamono
-XTerm*faceSize: 15
+XTerm*faceSize: 14
 
 XTerm*background: black
 XTerm*foreground: white
