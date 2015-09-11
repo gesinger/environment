@@ -33,5 +33,14 @@ $ sh bootstrap_physical.sh
 
 ## Screen Resolution
 
-Add a line to ~/.bashrc:
-xrandr -s 1280x800
+In /etc/default/grub, add:
+
+```
+GRUB_GFXPAYLOAD_LINUX=1280x800
+```
+
+Then run:
+
+```bash
+$ sudo update-grub
+```
