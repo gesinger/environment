@@ -27,6 +27,7 @@ $ cd /your/repo/dir
 $ git clone https://github.com/gesinger/environment.git
 $ cd environment
 $ sh bootstrap_physical.sh
+```
 
 # Fixes
 
