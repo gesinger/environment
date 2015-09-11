@@ -28,3 +28,23 @@ endfun
 autocmd BufEnter,WinEnter * call UpdateMatch()
 
 set cursorline
+
+" rolodex style split window zooming
+" taken from http://vim.wikia.com/wiki/Window_zooming_convenience
+function! ToggleMaxWins()
+  if exists('g:windowMax')
+    au! maxCurrWin
+    wincmd =
+    unlet g:windowMax
+  else
+    augroup maxCurrWin
+        " au BufEnter * wincmd _ | wincmd |
+        "
+        " only max it vertically
+        au! WinEnter * wincmd _
+    augroup END
+    do maxCurrWin WinEnter
+    let g:windowMax=1
+  endif
+endfunction
+nnoremap <C-w>o :call ToggleMaxWins()<CR>
