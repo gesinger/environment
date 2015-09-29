@@ -1,8 +1,10 @@
 XTerm*termName: xterm-256color
 
 XTerm*renderFont: true
-XTerm*faceName: firamono
-XTerm*faceSize: 14
+XTerm*faceName: FiraMono:style=Regular:size=14
+XTerm*dynamicColors: true
+Xft.antialias: true
+Xft.hinting: true
 
 XTerm*background: black
 XTerm*foreground: white
