@@ -17,12 +17,12 @@ sudo apt-get install -y pm-utils
 sudo apt-get install -y xclip
 sudo apt-get install -y silversearcher-ag
 
-if [ ! -e /usr/share/fonts/truetype/firamono ]; then
-  sudo mkdir -p /usr/share/fonts/truetype/firamono
-  cd /usr/share/fonts/truetype/firamono && \
-  sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Bold.ttf && \
-  sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Medium.ttf && \
-  sudo wget http://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Regular.ttf && \
+if [ ! -e /usr/share/fonts/opentype/firamono ]; then
+  sudo mkdir -p /usr/share/fonts/opentype/firamono
+  cd /usr/share/fonts/opentype/firamono && \
+  sudo wget http://github.com/mozilla/Fira/raw/master/otf/FiraMono-Bold.otf && \
+  sudo wget http://github.com/mozilla/Fira/raw/master/otf/FiraMono-Medium.otf && \
+  sudo wget http://github.com/mozilla/Fira/raw/master/otf/FiraMono-Regular.otf && \
   cd -
 fi
 
