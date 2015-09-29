@@ -15,6 +15,7 @@ sudo apt-get install -y powertop
 sudo apt-get install -y htop
 sudo apt-get install -y pm-utils
 sudo apt-get install -y xclip
+sudo apt-get install -y silversearcher-ag
 
 if [ ! -e /usr/share/fonts/truetype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/truetype/firamono
