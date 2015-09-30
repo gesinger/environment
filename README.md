@@ -1,12 +1,10 @@
 # environment
 
-My development environment, set up using Vagrant
-
-# Requirements
-
-- Vagrant
+My development environment
 
 # Usage
+
+## Vagrant
 
 To replicate my environment, clone this repo into the directory where you keep
 your repos (as it will sync the parent directory to /repos on the VM) and bring
@@ -18,6 +16,8 @@ $ git clone https://github.com/gesinger/environment.git
 $ cd environment
 $ vagrant up
 ```
+
+## Physical
 
 To replicate my environment on a physical machine, clone this repo into the
 directory where you keep your repos, cd into it, and run the physical bootrap.
