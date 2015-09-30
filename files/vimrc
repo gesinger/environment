@@ -48,3 +48,15 @@ function! ToggleMaxWins()
   endif
 endfunction
 nnoremap <C-w>o :call ToggleMaxWins()<CR>
+
+" Enable list of buffers in airline
+let g:airline#extensions#tabline#enabled = 1
+
+" CWD outside of vim
+let g:ctrlp_working_path_mode = 'rw'
+
+let g:airline_theme = 'serene'
+
+" Buffer shortcuts
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>d :bd<CR>

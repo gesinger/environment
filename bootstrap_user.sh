@@ -32,6 +32,16 @@ if [ ! -d ~/.vim/bundle/limelight.vim ]; then
   git clone git://github.com/junegunn/limelight.vim.git
 fi
 
+if [ ! -d ~/.vim/bundle/vim-airline ]; then
+  cd ~/.vim/bundle && \
+  git clone git://github.com/bling/vim-airline.git
+fi
+
+if [ ! -d ~/.vim/bundle/ctrlp.vim ]; then
+  cd ~/.vim/bundle && \
+  git clone git://github.com/kien/ctrlp.vim.git
+fi
+
 # Bash
 
 cat files/bashrc_append >> ~/.bashrc
