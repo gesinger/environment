@@ -44,3 +44,12 @@ Then run:
 ```bash
 $ sudo update-grub
 ```
+
+## Better Fonts
+
+Infinality was installed as part of bootstrap_physical.sh, however, configure
+it by running:
+
+```bash
+$ sudo bash /etc/fonts/infinality/infctl.sh setstyle
+```

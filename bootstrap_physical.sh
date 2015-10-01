@@ -26,6 +26,12 @@ if [ ! -e /usr/share/fonts/opentype/firamono ]; then
   cd -
 fi
 
+sudo apt-get install -y roboto
+
+sudo add-apt-repository ppa:no1wantdthisname/ppa
+sudo apt-get update
+sudo apt-get install fontconfig-infinality
+
 cp files/vimrc ~/.vimrc
 mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config
 cp files/Xresources ~/.Xresources
