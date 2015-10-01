@@ -68,5 +68,5 @@ And move it to:
 Then run:
 
 ```bash
-dispwin /usr/share/color/icc/<filename>.[icc|icm]
+dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 ```
