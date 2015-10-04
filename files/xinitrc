@@ -2,5 +2,8 @@
 
 dispwin -L
 
+# 3 finger tap on touchpad is middle click
+synclient TapButton3=2
+
 # invoke global X session script
 . /etc/X11/Xsession
