@@ -70,3 +70,7 @@ Then run:
 ```bash
 dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 ```
+
+# TODO
+
+- Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
