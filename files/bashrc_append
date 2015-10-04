@@ -15,3 +15,6 @@ alias gitd='git diff --color'
 if [ -d "$HOME/bin" ] ; then
     PATH="$PATH:$HOME/bin"
 fi
+
+# 3 finger tap on touchpad is middle click
+synclient TapButton3=2
