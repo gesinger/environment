@@ -60,3 +60,6 @@ let g:airline_theme = 'serene'
 " Buffer shortcuts
 nnoremap <leader>n :bn<CR>
 nnoremap <leader>d :bd<CR>
+
+" Goyo and Limelight shortcut
+nnoremap <leader>w :Goyo<CR>:Limelight<CR>
