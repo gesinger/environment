@@ -26,6 +26,7 @@ if [ ! -e /usr/share/fonts/opentype/firamono ]; then
   cd -
 fi
 
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:no1wantdthisname/ppa
 sudo apt-get update
 sudo apt-get install fontconfig-infinality
