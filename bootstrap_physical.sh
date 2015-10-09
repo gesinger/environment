@@ -5,6 +5,7 @@ sh bootstrap_user.sh
 
 sudo apt-get install -y xinit
 sudo apt-get install -y i3
+sudo apt-get install -y i3blocks
 sudo apt-get install -y xterm
 sudo apt-get install -y x11-xserver-utils
 sudo apt-get install -y firefox
@@ -32,7 +33,8 @@ if [ ! -e /usr/share/fonts/opentype/firamono ]; then
 fi
 
 cp files/vimrc ~/.vimrc
-mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config
+mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config && \
+  cp files/i3blocks_config ~/.i3blocks.conf
 cp files/Xresources ~/.Xresources
 cp -r files/bin ~/
 chmod u+x ~/bin/*
