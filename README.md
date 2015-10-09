@@ -77,6 +77,10 @@ dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 
 Black Black Chrome Theme Neon Green Highlight
 
+## Firefox Browser Theme
+
+Simple White Firefox Theme
+
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
