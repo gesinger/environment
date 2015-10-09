@@ -16,6 +16,11 @@ sudo apt-get install -y xclip
 sudo apt-get install -y silversearcher-ag
 sudo apt-get install -y argyll
 sudo apt-get install -y roboto
+sudo apt-get install -y software-properties-common
+
+sudo add-apt-repository ppa:no1wantdthisname/ppa
+sudo apt-get update
+sudo apt-get install -y fontconfig-infinality
 
 if [ ! -e /usr/share/fonts/opentype/firamono ]; then
   sudo mkdir -p /usr/share/fonts/opentype/firamono
@@ -25,11 +30,6 @@ if [ ! -e /usr/share/fonts/opentype/firamono ]; then
   sudo wget http://github.com/mozilla/Fira/raw/master/otf/FiraMono-Regular.otf && \
   cd -
 fi
-
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:no1wantdthisname/ppa
-sudo apt-get update
-sudo apt-get install fontconfig-infinality
 
 cp files/vimrc ~/.vimrc
 mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config
