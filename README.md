@@ -71,6 +71,12 @@ Then run:
 dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 ```
 
+# Optional
+
+## Chromium Browser Theme
+
+Black Black Chrome Theme Neon Green Highlight
+
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
