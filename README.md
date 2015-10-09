@@ -80,3 +80,7 @@ Black Black Chrome Theme Neon Green Highlight
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
+- Check into infinitality alternative:
+freetype2-ubuntu
+fontconfig-ubuntu
+cairo-ubuntu
