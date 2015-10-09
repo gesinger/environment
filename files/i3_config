@@ -151,5 +151,5 @@ bar {
         status_command i3status
 }
 
-# hide title bar
-new_window 1pixel
+# hide title bar and border
+new_window none

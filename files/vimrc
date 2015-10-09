@@ -75,3 +75,6 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 
 " CWD outside of vim
 let g:ctrlp_working_path_mode = 'rw'
+
+" Goyo and Limelight shortcut
+nnoremap <leader>w :Goyo<CR>:Limelight<CR>

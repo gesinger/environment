@@ -44,3 +44,33 @@ Then run:
 ```bash
 $ sudo update-grub
 ```
+
+## Better Fonts
+
+Infinality was installed as part of bootstrap_physical.sh, however, configure
+it by running:
+
+```bash
+$ sudo bash /etc/fonts/infinality/infctl.sh setstyle
+```
+
+## Color Profile
+
+Grab an icc/icm file calibrated in another os. For instance, on Mac it can be
+found at:
+
+/Library/ColorSync/Profiles
+
+And move it to:
+
+/usr/share/color/icc
+
+Then run:
+
+```bash
+dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
+```
+
+# TODO
+
+- Separate out laptop/mac/desktop configurations (e.g., touchpad taps)

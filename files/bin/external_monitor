@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ $1 == 'left' ]; then
+  xrandr --output DP-1 --auto --left-of LVDS-1
+elif [ $1 == 'right' ]; then
+  xrandr --output DP-1 --auto --right-of LVDS-1
+elif [ $1 == 'off' ]; then
+  xrandr --output DP-1 --off
+fi
