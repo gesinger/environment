@@ -81,6 +81,44 @@ Black Black Chrome Theme Neon Green Highlight
 
 Simple White Firefox Theme
 
+# Mac Specific Additions
+
+Check the Ubuntu website for up-to-date instructions on particular macs, e.g.:
+https://help.ubuntu.com/community/MacbookPro*-*/*
+
+## Set command key as option key
+
+https://help.ubuntu.com/community/AppleKeyboard#Ubuntu_11.10_up_to_recent
+
+## Set up eth0
+
+```bash
+$ sudo vim /etc/network/interfaces
+```
+
+Add:
+
+auto eth0
+iface eth0 inet dhcp
+
+## Set up B43 WIFI drivers
+
+https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx#b43_-_Internet_access
+
+## Sound
+
+```bash
+$ sudo apt-get install libasound2 libasound2-plugins alsa-utils alsa-oss
+$ sudo usermod -aG audio <username>
+$ sudo alsa force-reload
+```
+
+Test sound with:
+
+```bash
+$ aplay /usr/share/sounds/alsa/Front_Center.wav
+```
+
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
