@@ -39,3 +39,5 @@ cp files/Xresources ~/.Xresources
 cp -r files/bin ~/
 chmod u+x ~/bin/*
 cp files/xinitrc ~/.xinitrc
+
+sudo cp files/xconf/* /usr/share/X11/xorg.conf.d/
