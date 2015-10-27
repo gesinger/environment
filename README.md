@@ -130,3 +130,4 @@ freetype2-ubuntu
 fontconfig-ubuntu
 cairo-ubuntu
 - Look into suckless st
+- Add neovim
