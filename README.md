@@ -73,9 +73,12 @@ dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 
 # Optional
 
-## Chromium Browser Theme
+## Chromium
 
-Black Black Chrome Theme Neon Green Highlight
+Theme: Black Black Chrome Theme Neon Green Highlight
+Extensions:
+- Vimium
+- Ghostery
 
 ## Firefox Browser Theme
 
