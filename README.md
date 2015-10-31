@@ -74,10 +74,10 @@ dispwin -I /usr/share/color/icc/<filename>.[icc|icm]
 ## Brightness
 
 At least for the MacBookPro9,1, brightness did not work out of the box.
-Instead, install pommed:
+Instead, install pommed-light (pommed itself is CPU instensive):
 
 ```bash
-sudo apt-get install pommed
+./optional/pommed-light.sh
 ```
 
 Then modify /etc/pommed.conf, and in lcd\_sysfs, set step to 1000 and on\_batt
