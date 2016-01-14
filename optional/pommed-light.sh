@@ -4,7 +4,10 @@ sudo apt-get install -y libasound2-dev libconfuse-dev libaudiofile-dev libpci-de
 
 if [ ! -e ~/repos/external/pommed-light ]; then
   git clone http://github.com/bytbox/pommed-light ~/repos/external/pommed-light
-  cd ~/repos/external/exdict
+fi
+
+if [ ! -e /usr/bin/pommed ]; then
+  cd ~/repos/external/pommed-light
   make
   sudo cp pommed/pommed /usr/bin/
   sudo mkdir /usr/share/pommed
