@@ -3,21 +3,22 @@
 sudo sh bootstrap.sh
 sh bootstrap_user.sh
 
-sudo apt-get install -y xinit
-sudo apt-get install -y i3
-sudo apt-get install -y i3blocks
-sudo apt-get install -y xterm
-sudo apt-get install -y x11-xserver-utils
-sudo apt-get install -y firefox
-sudo apt-get install -y wicd-curses
-sudo apt-get install -y powertop
-sudo apt-get install -y htop
-sudo apt-get install -y pm-utils
-sudo apt-get install -y xclip
-sudo apt-get install -y silversearcher-ag
-sudo apt-get install -y argyll
-sudo apt-get install -y roboto
-sudo apt-get install -y software-properties-common
+sudo apt-get install -y \
+  xinit \
+  i3 \
+  i3blocks \
+  xterm \
+  x11-xserver-utils \
+  firefox \
+  wicd-curses \
+  powertop \
+  htop \
+  pm-utils \
+  xclip \
+  silversearcher-ag \
+  argyll \
+  fonts-roboto \
+  software-properties-common
 
 sudo add-apt-repository ppa:no1wantdthisname/ppa
 sudo apt-get update
