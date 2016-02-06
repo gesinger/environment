@@ -7,6 +7,8 @@ git config --global core.editor "vim"
 # VIM
 
 cp files/vimrc ~/.vimrc
+mkdir -p ~/.vim
+cp -r files/vim/ftplugin ~/.vim/
 
 if [ ! -e ~/.vim/autoload/pathogen.vim ]; then
   sudo apt-get install -y curl
