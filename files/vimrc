@@ -16,11 +16,15 @@ set shiftwidth=2
 set expandtab
 set relativenumber
 
+augroup filetypedetect
+au BufNewFile,BufRead *.txt setf txt
+augroup END
+
 " Highlight lines over 80 characters
 highlight OverLength ctermbg=darkgrey guibg=#111111
 fun! UpdateMatch()
   " Exclude these file types
-  if &ft !~ '^\%(text\)$'
+  if &ft !~ '^\%(txt\)$'
     match OverLength /\%80v.*/
   else
     match NONE
