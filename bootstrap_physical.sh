@@ -33,7 +33,6 @@ if [ ! -e /usr/share/fonts/opentype/firamono ]; then
   cd -
 fi
 
-cp files/vimrc ~/.vimrc
 mkdir -p ~/.i3 && cp files/i3_config ~/.i3/config && \
   cp files/i3blocks_config ~/.i3blocks.conf
 cp files/Xresources ~/.Xresources
