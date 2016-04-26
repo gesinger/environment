@@ -17,33 +17,36 @@ if [ ! -e ~/.vim/autoload/pathogen.vim ]; then
 fi
 
 if [ ! -d ~/.vim/bundle/vim-sensible ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/tpope/vim-sensible.git
+  git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 fi
 
 if [ ! -d ~/.vim/bundle/vim-distinguished ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/Lokaltog/vim-distinguished.git
+  git clone git://github.com/Lokaltog/vim-distinguished.git \
+    ~/.vim/bundle/vim-distinguished
 fi
 
 if [ ! -d ~/.vim/bundle/goyo.vim ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/junegunn/goyo.vim.git
+  git clone git://github.com/junegunn/goyo.vim.git ~/.vim/bundle/goyo.vim
 fi
 
 if [ ! -d ~/.vim/bundle/limelight.vim ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/junegunn/limelight.vim.git
+  git clone git://github.com/junegunn/limelight.vim.git \
+    ~/.vim/bundle/limelight.vim
 fi
 
 if [ ! -d ~/.vim/bundle/vim-airline ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/bling/vim-airline.git
+  git clone git://github.com/bling/vim-airline.git ~/.vim/bundle/vim-airline
 fi
 
-if [ ! -d ~/.vim/bundle/ctrlp.vim ]; then
-  cd ~/.vim/bundle && \
-  git clone git://github.com/kien/ctrlp.vim.git
+if [ ! -d ~/.vim/bundle/vimproc.vim ]; then
+  git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
+  cd ~/.vim/bundle/vimproc.vim
+  make
+  cd -
+fi
+
+if [ ! -d ~/.vim/bundle/unite.vim ]; then
+  git clone git://github.com/Shougo/unite.vim.git ~/.vim/bundle/unite.vim
 fi
 
 # Bash
