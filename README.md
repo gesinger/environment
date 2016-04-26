@@ -147,6 +147,27 @@ $ sudo apt-get install \
     virtualbox-guest-dkms
 ```
 
+## Remapping keys permanently
+
+Ubuntu comes with xkb (X keyBoard extension). To remap modifier keys, edit
+`/usr/share/X11/xkb/symbols/pc`. To change left win to left alt, change:
+
+```
+key <LWIN>  {[Super_L]};
+```
+to
+```
+key <LWIN> {[Alt_L]};
+```
+
+and clear xkb's cache:
+
+```bash
+rm -rf /var/lib/xkb/*
+```
+
+then restart your X session.
+
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
