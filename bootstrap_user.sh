@@ -38,6 +38,11 @@ if [ ! -d ~/.vim/bundle/vim-airline ]; then
   git clone git://github.com/bling/vim-airline.git ~/.vim/bundle/vim-airline
 fi
 
+if [ ! -d ~/.vim/bundle/vim-airline-themes ]; then
+  git clone git://github.com/vim-airline/vim-airline-themes.git \
+    ~/.vim/bundle/vim-airline-themes
+fi
+
 if [ ! -d ~/.vim/bundle/vimproc.vim ]; then
   git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
   cd ~/.vim/bundle/vimproc.vim
