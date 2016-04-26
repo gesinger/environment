@@ -78,8 +78,9 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 " Show just the filename
 "let g:airline#extensions#tabline#fnamemod = ':t'
 
-" CWD outside of vim
-let g:ctrlp_working_path_mode = 'rw'
+" Unite file searching
+nmap <C-p> :Unite file_rec/async<cr>
+nmap <space>/ :Unite grep:.<cr>
 
 " Goyo and Limelight shortcut
 nnoremap <leader>w :Goyo<CR>:Limelight<CR>
