@@ -134,6 +134,19 @@ Test sound with:
 $ aplay /usr/share/sounds/alsa/Front_Center.wav
 ```
 
+# VirtualBox Specific Additions
+
+## Guest additions and X11 fixes
+
+Install VirtualBox guest additions and packages for X11 and display support:
+
+```bash
+$ sudo apt-get install \
+    virtualbox-guest-utils \
+    virtualbox-guest-x11 \
+    virtualbox-guest-dkms
+```
+
 # TODO
 
 - Separate out laptop/mac/desktop configurations (e.g., touchpad taps)
