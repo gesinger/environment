@@ -54,6 +54,11 @@ if [ ! -d ~/.vim/bundle/unite.vim ]; then
   git clone git://github.com/Shougo/unite.vim.git ~/.vim/bundle/unite.vim
 fi
 
+if [ ! -d ~/.vim/bundle/typescript-vim ]; then
+  git clone https://github.com/leafgarland/typescript-vim.git \
+    ~/.vim/bundle/typescript-vim
+fi
+
 # Bash
 
 cat files/bashrc_append >> ~/.bashrc
