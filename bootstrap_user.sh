@@ -59,6 +59,11 @@ if [ ! -d ~/.vim/bundle/typescript-vim ]; then
     ~/.vim/bundle/typescript-vim
 fi
 
+if [ ! -d ~/.vim/bundle/vim-javascript ]; then
+  git clone https://github.com/pangloss/vim-javascript.git \
+    ~/.vim/bundle/vim-javascript
+fi
+
 # Bash
 
 cat files/bashrc_append >> ~/.bashrc
