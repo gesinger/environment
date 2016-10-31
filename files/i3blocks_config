@@ -74,5 +74,5 @@ command=/usr/share/i3blocks/battery
 interval=30
 
 [time]
-command=date '+%Y-%m-%d %H:%M:%S'
+command=date +%R
 interval=5
