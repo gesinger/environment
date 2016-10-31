@@ -154,3 +154,5 @@ bar {
 
 # hide title bar and border
 new_window none
+
+exec --no-startup-id nm-applet

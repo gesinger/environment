@@ -10,7 +10,7 @@ sudo apt-get install -y \
   xterm \
   x11-xserver-utils \
   firefox \
-  wicd-curses \
+  network-manager \
   powertop \
   htop \
   pm-utils \
