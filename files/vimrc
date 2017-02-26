@@ -4,8 +4,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set number
-
 set background=dark
 colorscheme distinguished
 
@@ -14,73 +12,50 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set relativenumber
+set number
+" case insensitive search unless capital letter or \C
+set smartcase
+set colorcolumn=91
+
+inoremap jj <Esc>
+
+" space, file name, right side, line number, space
+set statusline=%f%=%l
+hi StatusLine ctermfg=59 ctermbg=black
+
+" Light grey (match comment colors)
+highlight LineNr ctermfg=59 ctermbg=black
 
 augroup filetypedetect
 au BufNewFile,BufRead *.txt setf txt
 augroup END
-
-" Highlight lines over 80 characters
-highlight OverLength ctermbg=darkgrey guibg=#111111
-fun! UpdateMatch()
-  " Exclude these file types
-  if &ft !~ '^\%(txt\)$'
-    match OverLength /\%80v.*/
-  else
-    match NONE
-  endif
-endfun
-autocmd BufEnter,WinEnter * call UpdateMatch()
-
-set cursorline
-
-" rolodex style split window zooming
-" taken from http://vim.wikia.com/wiki/Window_zooming_convenience
-function! ToggleMaxWins()
-  if exists('g:windowMax')
-    au! maxCurrWin
-    wincmd =
-    unlet g:windowMax
-  else
-    augroup maxCurrWin
-        " au BufEnter * wincmd _ | wincmd |
-        "
-        " only max it vertically
-        au! WinEnter * wincmd _
-    augroup END
-    do maxCurrWin WinEnter
-    let g:windowMax=1
-  endif
-endfunction
-nnoremap <C-w>o :call ToggleMaxWins()<CR>
 
 " Change leader to spacebar
 let mapleader = "\<space>"
 
 " Buffer shortcuts
 nnoremap <leader>n :bn<CR>
+nnoremap <leader>p :bp<CR>
 nnoremap <leader>d :bd<CR>
+nnoremap gn :bn<cr>
+nnoremap gp :bp<cr>
+nnoremap gd :bd<cr>
+nnoremap gl :ls<CR>
 
-let g:airline_theme = 'serene'
-" Enable list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show tab number
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-" Show just the filename
-"let g:airline#extensions#tabline#fnamemod = ':t'
+" Goyo and Limelight
+let g:goyo_width=90
+nnoremap <leader><leader> :Goyo<CR>
+nnoremap <leader>w :Goyo<CR>:Limelight<CR>
+
+nnoremap <leader>n :set nu!<CR>
 
 " Unite file searching
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '-i --vimgrep --hidden --ignore .git'
+  let g:unite_source_grep_recursive_opt=''
+  let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor',
+    \ '--nogroup', '--hidden', '-g', '']
+endif
 nmap <C-p> :Unite file_rec/async<cr>
-nmap <space>/ :Unite grep:.<cr>
-
-" Goyo and Limelight shortcut
-nnoremap <leader>w :Goyo<CR>:Limelight<CR>
+nmap <space>/ :Unite -auto-resize -start-insert -buffer-name=ag  grep:.<cr>
