@@ -12,6 +12,7 @@ alias gits='git status'
 alias gitd='git diff --color'
 
 alias server='python -m SimpleHTTPServer'
+alias servercors='python ~/bin/server_cors.py'
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
