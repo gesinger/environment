@@ -2,6 +2,8 @@
 execute pathogen#infect()
 
 syntax on
+" Limit syntax columns for performance
+set synmaxcol=120
 filetype plugin indent on
 
 set background=dark
