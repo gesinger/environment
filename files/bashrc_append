@@ -18,3 +18,5 @@ alias servercors='python ~/bin/server_cors.py'
 if [ -d "$HOME/bin" ] ; then
     PATH="$PATH:$HOME/bin"
 fi
+
+set -o vi
