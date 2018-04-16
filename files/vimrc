@@ -28,6 +28,10 @@ hi StatusLine ctermfg=59 ctermbg=black
 " Light grey (match comment colors)
 highlight LineNr ctermfg=59 ctermbg=black
 
+" Highlight space at end of line in red
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 augroup filetypedetect
 au BufNewFile,BufRead *.txt setf txt
 augroup END
