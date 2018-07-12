@@ -10,6 +10,7 @@ export PS1="\n\n${PINK}\u ${D}at ${ORANGE}\H ${D}in ${GREEN}\w ${D}\n\$ "
 
 alias gits='git status'
 alias gitd='git diff --color'
+alias gitg='git log --oneline --decorate --all --graph'
 
 alias server='python -m SimpleHTTPServer'
 alias servercors='python ~/bin/server_cors.py'
