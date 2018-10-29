@@ -49,7 +49,7 @@ set -g status-attr dim
 set -g status-left ''
 set -g status-right ''
 set -g status-bg colour0
-set -g status-fg colour15
+set -g status-fg colour8
 
 # messages
 set -g message-attr bold
