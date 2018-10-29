@@ -44,6 +44,10 @@ if [ ! -d ~/.vim/bundle/vim-javascript ]; then
     ~/.vim/bundle/vim-javascript
 fi
 
+# tmux
+
+cp files/tmux_config ~/.tmux.conf
+
 # Bash
 
 cat files/bashrc_append >> ~/.bashrc
