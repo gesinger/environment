@@ -1,14 +1,18 @@
 
 # Start environment customization
 
-D=$'\e[37;40m'
-GREY=$'\e[90;40m'
+D=$'\[\033[37;40m\]'
+GREY=$'\[\033[90;40m\]'
+PS_CLEAR='\[\033[0m\]'
 
-export PS1="\n\n${GREY}\w ${D}\n\$ "
+export CLICOLOR=1
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+export PS1="\n\n${GREY}\w ${PS_CLEAR}\n\$ ${D}"
 
 alias gits='git status'
 alias gitd='git diff --color'
 alias gitg='git log --oneline --decorate --all --graph'
+alias gitb='git branch --sort=committerdate'
 
 alias server='python -m SimpleHTTPServer'
 alias servercors='python ~/bin/server_cors.py'
@@ -19,3 +23,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 set -o vi
+bind '"jk":vi-movement-mode'
