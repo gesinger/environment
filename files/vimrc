@@ -25,8 +25,8 @@ set colorcolumn=91
 
 inoremap jj <Esc>
 
-" space, file name, right side, line number, space
-set statusline=%f%=%l
+" file name, right side, line number
+set statusline=%f%=%c
 hi StatusLine ctermfg=59 ctermbg=black
 
 " Light grey (match comment colors)
