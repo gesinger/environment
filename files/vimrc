@@ -6,12 +6,7 @@ syntax on
 set synmaxcol=120
 filetype plugin indent on
 
-" display matching files on tab complete
-set wildmenu
-set wildignore+=**/node_modules/**
-
-set background=dark
-colorscheme distinguished
+colorscheme overwinter
 
 set autoindent
 set smartindent
@@ -28,6 +23,10 @@ inoremap jj <Esc>
 " file name, right side, line number
 set statusline=%f%=%c
 hi StatusLine ctermfg=59 ctermbg=black
+
+" tab completion
+set wildmode=longest,list,full
+set wildmenu
 
 " Light grey (match comment colors)
 highlight LineNr ctermfg=59 ctermbg=black
@@ -59,3 +58,5 @@ nnoremap <leader><leader> :Goyo<CR>
 nnoremap <leader>w :Goyo<CR>:Limelight<CR>
 
 nnoremap <leader>n :set nu!<CR>
+
+set termguicolors
