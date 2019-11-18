@@ -18,7 +18,7 @@ set number
 set smartcase
 set colorcolumn=91
 
-inoremap jj <Esc>
+inoremap jk <Esc>
 
 " file name, right side, line number
 set statusline=%f%=%c
