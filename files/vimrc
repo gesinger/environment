@@ -60,3 +60,11 @@ nnoremap <leader>w :Goyo<CR>:Limelight<CR>
 nnoremap <leader>n :set nu!<CR>
 
 set termguicolors
+
+function! MaxWidth()
+  let widths = map(getline(1, '$'), 'strdisplaywidth(v:val)')
+  return max(widths)
+endfunction
+
+" buffer of 4 added for gutter
+nnoremap <silent> <leader>r :exe "vertical resize " . (MaxWidth() + 4)<CR>
