@@ -20,11 +20,6 @@ if [ ! -d ~/.vim/bundle/vim-sensible ]; then
   git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 fi
 
-if [ ! -d ~/.vim/bundle/vim-distinguished ]; then
-  git clone git://github.com/Lokaltog/vim-distinguished.git \
-    ~/.vim/bundle/vim-distinguished
-fi
-
 if [ ! -d ~/.vim/bundle/goyo.vim ]; then
   git clone git://github.com/junegunn/goyo.vim.git ~/.vim/bundle/goyo.vim
 fi
@@ -32,16 +27,6 @@ fi
 if [ ! -d ~/.vim/bundle/limelight.vim ]; then
   git clone git://github.com/junegunn/limelight.vim.git \
     ~/.vim/bundle/limelight.vim
-fi
-
-if [ ! -d ~/.vim/bundle/typescript-vim ]; then
-  git clone https://github.com/leafgarland/typescript-vim.git \
-    ~/.vim/bundle/typescript-vim
-fi
-
-if [ ! -d ~/.vim/bundle/vim-javascript ]; then
-  git clone https://github.com/pangloss/vim-javascript.git \
-    ~/.vim/bundle/vim-javascript
 fi
 
 # tmux
