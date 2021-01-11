@@ -187,3 +187,9 @@ tree => tree -I node_modules
 
 Install oh-my-zsh
 git config --global diff.tool vimdiff
+
+# Useful extra tools
+
+## Streaming Tools
+
+* https://github.com/soldiermoth/hlsq
