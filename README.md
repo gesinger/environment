@@ -177,3 +177,13 @@ fontconfig-ubuntu
 cairo-ubuntu
 - Look into suckless st
 - Add neovim
+
+---
+
+Add alias for tree and add tree to environment:
+tree => tree -I node_modules
+
+---
+
+Install oh-my-zsh
+git config --global diff.tool vimdiff

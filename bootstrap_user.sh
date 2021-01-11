@@ -36,3 +36,4 @@ cp files/tmux_config ~/.tmux.conf
 # Bash
 
 cat files/bashrc_append >> ~/.bashrc
+cat files/zshrc >> ~/.zshrc
