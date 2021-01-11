@@ -33,6 +33,9 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+# renumber windows whenever a window is closed
+set-option -g renumber-windows on
+
 ######################
 ### DESIGN CHANGES ###
 ######################
@@ -45,19 +48,17 @@ set-window-option -g monitor-activity off
 set-option -g bell-action none
 
 # statusbar
-set -g status-attr dim
+set -g status-style bg='#000000',fg='#bcbcbc'
 set -g status-left ''
 set -g status-right ''
-set -g status-bg colour0
-set -g status-fg colour8
 
 # messages
-set -g message-attr bold
-set -g message-bg colour3
-set -g message-fg colour0
+set -g message-style bg='#000000',fg='#bcbcbc'
 
 # panes
-set -g pane-border-bg colour0
-set -g pane-border-fg colour8
-set -g pane-active-border-bg colour0
-set -g pane-active-border-fg colour8
+set -g pane-border-style fg='#4e4e4e'
+set -g pane-active-border-style fg='#4e4e4e'
+# set -g pane-border-bg colour0
+# set -g pane-border-fg colour8
+# set -g pane-active-border-bg colour0
+# set -g pane-active-border-fg colour8
