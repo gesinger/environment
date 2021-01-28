@@ -37,3 +37,8 @@ cp files/tmux_config ~/.tmux.conf
 
 cat files/bashrc_append >> ~/.bashrc
 cat files/zshrc >> ~/.zshrc
+
+# tig
+
+cp files/tigrc.vim ~/.tigrc.vim
+echo "source ~/.tigrc.vim" >> ~/.tigrc
