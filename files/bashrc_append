@@ -15,6 +15,10 @@ alias gitdw='git diff --word-diff --color'
 alias gitg='git log --oneline --decorate --all --graph'
 alias gitb='git branch --sort=committerdate'
 
+xml_pretty_print() {
+  echo $1 | xmllint --format -
+}
+
 alias server='python -m SimpleHTTPServer'
 alias servercors='python ~/bin/server_cors.py'
 
